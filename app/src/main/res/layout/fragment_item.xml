@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:id="@+id/detail_item"
+    tools:context="com.example.islammahoud.emoal.ItemActivity.ItemFragment">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:background="#80000000" />
+    </RelativeLayout>
+     <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     <android.support.v7.widget.RecyclerView
+         android:layout_marginTop="10dp"
+         android:id="@+id/list"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         tools:listitem="@layout/item_list"
+         />
+         <ProgressBar
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:id="@+id/prog"
+             android:indeterminateDrawable="@drawable/prograssbar"
+             android:gravity="center"
+             android:layout_gravity="center"
+             android:layout_margin="20dp"
+             android:background="@drawable/g"/>
+     </FrameLayout>
+ </LinearLayout>
+
+</ScrollView>

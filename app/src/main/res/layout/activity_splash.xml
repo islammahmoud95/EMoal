@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.islammahoud.ebsfnub.Activties.splash"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:gravity="center_vertical"
+    android:layout_centerHorizontal="true">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_margin="50dp"
+         android:layout_gravity="center">
+     <ImageView
+         android:id="@+id/splash"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:src="@drawable/logo"/>
+     <ProgressBar
+         android:layout_width="150dp"
+         android:layout_height="150dp"
+         android:id="@+id/prog"
+         android:indeterminateDrawable="@drawable/prograssbar"
+         android:gravity="center"
+         android:layout_gravity="center"
+         android:layout_margin="20dp"
+         android:background="@drawable/g"/>
+          <TextView
+              android:id="@+id/text1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="24dp"
+              android:textAlignment="center"
+              android:gravity="center"
+              android:text="قرر مكانك من البيت"
+              android:textColor="@color/colorAccent"
+              android:background="@drawable/krr"/>
+     </LinearLayout>
+
+</LinearLayout>

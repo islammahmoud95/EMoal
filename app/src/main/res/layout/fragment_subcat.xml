@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.islammahoud.emoal.SubcatFragment"
+    android:background="@color/colorborder">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/subcat"
+            android:background="@color/colorborder"
+            />
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/prog"
+        android:indeterminateDrawable="@drawable/prograssbar"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/g"/>
+
+</FrameLayout>
